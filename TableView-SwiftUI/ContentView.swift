@@ -10,7 +10,13 @@ import SwiftUI
 
 struct ContentView: View {
     var body: some View {
-        Text("Hello World")
+        NavigationView {
+            List {
+         Text("Hello World")
+         Text("TableView")
+         Text("SwiftUI")
+            }.navigationBarTitle(Text("TableView SwiftUI"))
+        }
     }
 }
 
@@ -19,3 +25,4 @@ struct ContentView_Previews: PreviewProvider {
         ContentView()
     }
 }
+
